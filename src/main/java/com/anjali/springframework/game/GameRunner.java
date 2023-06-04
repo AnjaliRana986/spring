@@ -1,12 +1,14 @@
 package com.anjali.springframework.game;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
 public class GameRunner {
 //    MarioGame game;
     private GamingConsole game;
-    public GameRunner(GamingConsole game) {
+    // directly specifying autowiring : this is the qualifier which should be autowired in
+    public GameRunner(@Qualifier("SuperContraGameQualifier") GamingConsole game) {
         this.game = game;
     }
 
