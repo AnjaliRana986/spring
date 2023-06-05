@@ -1,7 +1,4 @@
-package com.anjali.springframework;
-
-import com.anjali.springframework.game.GameRunner;
-import com.anjali.springframework.game.GamingConsole;
+package com.anjali.springframework.game;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
