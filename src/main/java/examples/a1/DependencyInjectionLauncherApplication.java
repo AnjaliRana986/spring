@@ -14,11 +14,11 @@ import org.springframework.stereotype.Component;
 @Component
 class YourBusinessClass{
 
-
+    //nOTE : Spring team recommends Constructor-based injection as dependencies are automatically set when an object is created
     //Using constructor injection
     Dependency1 dependency1;
     Dependency2 dependency2;
-    @Autowired
+    //@Autowired
     public YourBusinessClass(Dependency1 dependency1, Dependency2 dependency2) {
         System.out.println("Constructor Injection - YourBusinessClass ");
         this.dependency1 = dependency1;
